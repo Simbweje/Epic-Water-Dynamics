@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080.29 540.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b4dffa;
+      }
+
+      .cls-1, .cls-2 {
+        mix-blend-mode: soft-light;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        opacity: .53;
+      }
+
+      .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+        mix-blend-mode: hard-light;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+        opacity: .28;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-6" x="2.09" y="6" width="1040" height="500"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="2627.73" y1="-134.22" x2="2646.71" y2="-395.34" gradientTransform="translate(2238.74 2021.91) rotate(-135)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7096e3"/>
+      <stop offset="1" stop-color="#9ac4f1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2608.58" y1="-335.79" x2="2429.68" y2="-99.97" gradientTransform="translate(2280.12 1941.72) rotate(-135)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5e5fe1"/>
+      <stop offset="1" stop-color="#b4dffa"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="2211.79" y1="-46.74" x2="2430.41" y2="-46.74" gradientTransform="translate(2219.6 1755.82) rotate(-135)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#b4dffa"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-4">
+    <g id="OBJECTS">
+      <g class="cls-5">
+        <image width="1440" height="780" transform="translate(1.46) scale(.72 .65)" xlink:href="hero-bg.png"/>
+        <circle class="cls-7" cx="233.66" cy="303.75" r="202.24" transform="translate(-146.35 254.19) rotate(-45)"/>
+        <circle class="cls-3" cx="351.15" cy="313.61" r="186.38" transform="translate(-118.91 340.15) rotate(-45)"/>
+        <circle class="cls-1" cx="545.51" cy="147.61" r="130.6"/>
+        <circle class="cls-2" cx="545.28" cy="147.61" r="109.31" transform="translate(55.33 428.8) rotate(-45)"/>
+      </g>
+    </g>
+  </g>
+</svg>

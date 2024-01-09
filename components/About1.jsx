@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeroImage from "../public/hero/waterimage.jpg";
+import HeroImage from "../public/about/success.png";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   User2,
@@ -10,6 +10,7 @@ import {
   Calendar,
   Briefcase,
 } from "lucide-react";
+import DevImg from "./DevImg";
 
 const infoData = [
   {
@@ -43,24 +44,24 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "Mzuni",
-        qualification: "Master of Science",
-        years: "2019 - 2023",
+        University: "Mzuni",
+        Qualification: "Master of Science",
+        Years: "2019 - 2023",
       },
       {
-        university: "Mzuni",
-        qualification: "Master of Science",
-        years: "2019 - 2023",
+        University: "Mzuni",
+        Qualification: "Master of Science",
+        Years: "2019 - 2023",
       },
       {
-        university: "Mzuni",
-        qualification: "Master of Science",
-        years: "2019 - 2023",
+        University: "Mzuni",
+        Qualification: "Master of Science",
+        Years: "2019 - 2023",
       },
       {
-        university: "Mzuni",
-        qualification: "Master of Science",
-        years: "2019 - 2023",
+        University: "Mzuni",
+        Qualification: "Master of Science",
+        Years: "2019 - 2023",
       },
     ],
   },
@@ -129,18 +130,18 @@ const About = () => {
   };
   return (
     <section className="xl:h-[860px] pb-12 xl:py-24">
-      <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+      <div className="container ma-auto">
+        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
           What sets us apart from our contemporaries
         </h2>
+
         <div className="flex flex-col xl:flex-row">
-          <div className="mr-16 hidden xl:flex flex-1 relative">
+          <div className=" hidden xl:flex flex-1 relative">
             <Image
-              className="w-[505px] h-[505px] rounded-xl overflow-hidden"
+              containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
               src={HeroImage}
             />
           </div>
-
           <div className="flex-1">
             <Tabs defaultValue="personal">
               <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">

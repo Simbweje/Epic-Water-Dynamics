@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Download, Send } from "lucide-react";
-import HeroImage from "../public/about/developer.png";
+import { Download, Send, Mail } from "lucide-react";
 import {
   RiBriefcase4Fill,
   RiTeamFill,
@@ -9,8 +8,6 @@ import {
   RiArrowDownSLine,
 } from "react-icons/ri";
 
-import Image from "next/image";
-import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
 
@@ -18,15 +15,17 @@ import SvgComponent from "./SvgComponent";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero_bg_light bg-no-repeat bg-bottom bg-cover ">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-x-8">
           <div className="flex flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Welcome to{" "}
+              Welcome to
             </div>
-            <h1 className="h1 text-primary">Epic Water Dynamics</h1>
-            <p className="subtittle max-w-[490px] mx-auto xl:mx-0">
+            <h1 className="h1 text-primary dark:text-white">
+              Epic Water Dynamics
+            </h1>
+            <p className="subtittle max-w-[490px] text-black dark:text-white mx-auto xl:mx-0">
               We are a passionate team of scientists, engineers and managers
               dedicated to providing comprehensive consultancy, product
               development and training services. We combine extensive experience
@@ -38,9 +37,13 @@ const Hero = () => {
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
                 <Button className="gap-x-2">
-                  Contact us <Send size={18} />
+                  Contact us <Mail size={18} />
                 </Button>
               </Link>
+              <Button variant="secondary" className="gap-x-2">
+                Success stories
+                <Download size={18} />
+              </Button>
             </div>
 
             <Socials
@@ -49,7 +52,7 @@ const Hero = () => {
             />
           </div>
           {/* Image and Badges Section */}
-          <div className="md:flex relative mt-8 md:mt-0">
+          <div className="hidden xl:flex relative">
             {/* SvgComponent as background */}
             <SvgComponent className="absolute inset-0 z-0" />
 

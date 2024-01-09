@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logoimage from "../public/logoold.png";
-
+import Logo1 from "../public/EPD.png";
 const Logo = () => {
   return (
     <Link href="/">
-      <h2 className="h3 text-primary">EPD</h2>
+      <Image className="w-[40px] " src={Logo1} />
     </Link>
   );
 };
